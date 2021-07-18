@@ -41,6 +41,12 @@ let color = 'blue';
 
 // Add your code here
 
+if(canvas.getContext){
+  var context = canvas.getContext('2d');
+  context.fillStyle = color;
+  context.fillRect(x,y,width,height);
+}
+
     </textarea>
 
     <div class="playable-buttons">
